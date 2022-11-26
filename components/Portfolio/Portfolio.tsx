@@ -12,7 +12,7 @@ export const Portfolio = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {portfolioData.map((card: CardProps) => (
-          <div className="sm:mx-6 my-4">
+          <div className="sm:mx-6 my-4" key={card.title}>
             <PortfolioCard
               title={card.title}
               description={card.description}

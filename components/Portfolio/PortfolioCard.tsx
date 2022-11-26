@@ -36,7 +36,11 @@ export const PortfolioCard: React.FC<CardProps> = ({
           )}
           <ul className="list-disc my-2">
             {tools.length > 0 ? (
-              tools.map((tool) => <li className="ml-6">{tool}</li>)
+              tools.map((tool) => (
+                <li className="ml-6" key={tool}>
+                  {tool}
+                </li>
+              ))
             ) : (
               <div className="ml-6">
                 <li>Machine Learning</li>
