@@ -1,14 +1,13 @@
 import type { NextPage } from "next";
-import { Profile, Portfolio } from "@components";
+import { Profile, Portfolio, Footer } from "@components";
 import "@fontsource/roboto";
 
 const Home: NextPage = () => {
   return (
     <div className="">
-      <div>
-        <Profile />
-        <Portfolio />
-      </div>
+      <Profile />
+      <Portfolio />
+      <Footer />
     </div>
   );
 };

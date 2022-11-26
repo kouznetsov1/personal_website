@@ -3,4 +3,5 @@ export interface CardProps {
   description: string;
   image: string;
   tools: string[];
+  url: string;
 }

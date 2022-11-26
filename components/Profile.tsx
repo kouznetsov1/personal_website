@@ -1,14 +1,16 @@
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import Image from "next/image";
 import { aboutMe } from "./profileData";
 import { ProfileImage } from "./ProfileImage";
 
 export const Profile = () => {
   return (
-    <div className="min-h-screen bg-emerald-700 border-2 border-emerald-700">
+    <div
+      className="min-h-screen bg-gradient-to-tr animate-gradient from-emerald-400 to-emerald-800"
+      style={{ backgroundSize: "400% 400%" }}
+    >
       <div className="lg:w-1/2 w-4/5 text-white m-auto text-center justify-center">
-        <div className="">
-          <div className="m-12">
+        <div className="drop-shadow-lg">
+          <div className="pt-16">
             <div className="flex m-auto justify-center">
               <div className="-mr-32">
                 <a href="https://www.linkedin.com/in/daniel-kouznetsov-489011127/">
