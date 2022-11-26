@@ -4,7 +4,7 @@ import { portfolioData } from "./portfolioData";
 
 export const Portfolio = () => {
   return (
-    <div className="w-2/3 xl:w-1/2 m-auto" id="portfolio">
+    <div className="w-5/6 2xl:w-1/2 m-auto" id="portfolio">
       <div>
         <h1 className="text-4xl font-semibold text-center mt-12 mb-6">
           Projects
