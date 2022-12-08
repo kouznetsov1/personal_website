@@ -14,15 +14,24 @@ export const Profile = () => {
             <div className="flex m-auto justify-center">
               <div className="-mr-32">
                 <a href="https://www.linkedin.com/in/daniel-kouznetsov-489011127/">
-                  <ProfileImage image={"linkedin.png"} alt={"linkedin"} />
+                  <ProfileImage
+                    image={"/../public/linkedin.png"}
+                    alt={"linkedin"}
+                  />
                 </a>
               </div>
               <div className="z-10">
-                <ProfileImage image={"selfie.jpg"} alt={"profilepicture"} />
+                <ProfileImage
+                  image={"/../public/selfie.jpg"}
+                  alt={"profilepicture"}
+                />
               </div>
               <div className="-ml-32 z-0">
                 <a href="https://github.com/kouznetsov1">
-                  <ProfileImage image={"gitprofilepic.png"} alt={"git"} />
+                  <ProfileImage
+                    image={"/../public/gitprofilepic.png"}
+                    alt={"git"}
+                  />
                 </a>
               </div>
             </div>
