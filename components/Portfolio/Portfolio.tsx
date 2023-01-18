@@ -19,7 +19,7 @@ export const Portfolio = () => {
             <PortfolioCard
               title={card.title}
               description={card.description}
-              image={card.url}
+              image={card.image}
               tools={card.tools}
               url={card.url}
             />
