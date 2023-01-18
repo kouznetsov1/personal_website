@@ -3,6 +3,10 @@ import { aboutMe } from "./profileData";
 import { ProfileImage } from "./ProfileImage";
 
 export const Profile = () => {
+  const linkedinURL =
+    "https://www.linkedin.com/in/daniel-kouznetsov-489011127/";
+  const githubURL = "https://www.github.com/kouznetsov1";
+
   return (
     <div
       className="min-h-screen bg-gradient-to-tr animate-gradient from-emerald-400 to-emerald-800"
@@ -13,7 +17,7 @@ export const Profile = () => {
           <div className="pt-16">
             <div className="flex m-auto justify-center">
               <div className="-mr-32">
-                <a href="https://www.linkedin.com/in/daniel-kouznetsov-489011127/">
+                <a href={linkedinURL}>
                   <ProfileImage image={"linkedin.png"} alt={"linkedin"} />
                 </a>
               </div>
@@ -21,7 +25,7 @@ export const Profile = () => {
                 <ProfileImage image={"selfie.jpg"} alt={"profilepicture"} />
               </div>
               <div className="-ml-32 z-0">
-                <a href="https://github.com/kouznetsov1">
+                <a href={githubURL}>
                   <ProfileImage image={"gitprofilepic.png"} alt={"git"} />
                 </a>
               </div>
