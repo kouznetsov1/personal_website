@@ -3,6 +3,9 @@ import { CardProps } from "./CardProps";
 import { portfolioData } from "./portfolioData";
 
 export const Portfolio = () => {
+  const path = require("path");
+  const imagePath = path.join(__dirname, "public");
+
   return (
     <div className="w-5/6 2xl:w-3/5 m-auto text-neutral-800" id="portfolio">
       <div>

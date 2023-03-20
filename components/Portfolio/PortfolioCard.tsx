@@ -16,7 +16,7 @@ export const PortfolioCard: React.FC<CardProps> = ({
             <a href={url}>
               <Image
                 src={image}
-                alt="selfie"
+                alt="portfolio image"
                 objectFit="cover"
                 objectPosition="top"
                 className="rounded-md"
@@ -28,7 +28,9 @@ export const PortfolioCard: React.FC<CardProps> = ({
         <div className="mx-4 md:mx-6">
           <div className="">
             <a href={url}>
-              <h1 className="text-2xl font-semibold my-2">{title}</h1>
+              <h1 className="text-2xl font-semibold mt-6 lg:mt-0 mb-2">
+                {title}
+              </h1>
             </a>
             <p>{description}</p>
           </div>

@@ -3,6 +3,10 @@ import { aboutMe } from "./profileData";
 import { ProfileImage } from "./ProfileImage";
 
 export const Profile = () => {
+  const linkedinURL =
+    "https://www.linkedin.com/in/daniel-kouznetsov-489011127/";
+  const githubURL = "https://www.github.com/kouznetsov1";
+
   return (
     <div
       className="min-h-screen bg-gradient-to-tr animate-gradient from-neutral-800 to-neutral-900"
