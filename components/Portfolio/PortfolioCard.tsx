@@ -9,7 +9,7 @@ export const PortfolioCard: React.FC<CardProps> = ({
   url,
 }) => {
   return (
-    <div className="w-full my-2 border-4 rounded-md border-neutral-800 p-4 bg-neutral-200 shadow-xl">
+    <div className="w-full my-6 rounded-md p-6 lg:p-12 bg-neutral-200 shadow-xl">
       <div className="m-auto flex flex-col lg:flex-row">
         <div className="">
           <div className="border-4 relative bg-neutral-900 border-neutral-800 h-72 lg:w-96 md:justify-around w-full rounded-md">
