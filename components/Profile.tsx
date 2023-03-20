@@ -5,24 +5,39 @@ import { ProfileImage } from "./ProfileImage";
 export const Profile = () => {
   return (
     <div
-      className="min-h-screen bg-gradient-to-tr animate-gradient from-emerald-400 to-emerald-800"
+      className="min-h-screen bg-gradient-to-tr animate-gradient from-neutral-800 to-neutral-900"
       style={{ backgroundSize: "400% 400%" }}
     >
-      <div className="lg:w-1/2 w-4/5 text-white m-auto text-center justify-center">
+      <div className="lg:w-1/2 w-4/5 text-neutral-100 m-auto text-center justify-center">
         <div className="drop-shadow-lg">
           <div className="pt-16">
             <div className="flex m-auto justify-center">
               <div className="-mr-32">
                 <a href="https://www.linkedin.com/in/daniel-kouznetsov-489011127/">
-                  <ProfileImage image={"linkedin.png"} alt={"linkedin"} />
+                  <ProfileImage
+                    image={
+                      "https://raw.githubusercontent.com/kouznetsov1/personal_website/main/public/linkedin.png"
+                    }
+                    alt={"linkedin"}
+                  />
                 </a>
               </div>
               <div className="z-10">
-                <ProfileImage image={"selfie.jpg"} alt={"profilepicture"} />
+                <ProfileImage
+                  image={
+                    "https://raw.githubusercontent.com/kouznetsov1/personal_website/main/public/selfie.jpg"
+                  }
+                  alt={"profilepicture"}
+                />
               </div>
               <div className="-ml-32 z-0">
                 <a href="https://github.com/kouznetsov1">
-                  <ProfileImage image={"gitprofilepic.png"} alt={"git"} />
+                  <ProfileImage
+                    image={
+                      "https://raw.githubusercontent.com/kouznetsov1/personal_website/main/public/gitprofilepic.png"
+                    }
+                    alt={"git"}
+                  />
                 </a>
               </div>
             </div>

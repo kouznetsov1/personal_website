@@ -3,7 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 export const Footer = () => {
   return (
-    <div className="w-full h-28 bg-black mt-12 text-white text-center text-xl">
+    <div className="w-full h-28 bg-neutral-900 mt-12 text-neutral-100 text-center text-xl">
       <div className="">
         <div className="p-4">
           <p>Get in touch!</p>
