@@ -9,7 +9,7 @@ export const Profile = () => {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-tr animate-gradient from-neutral-800 to-neutral-900"
+      className="min-h-screen bg-gradient-to-tr animate-gradient from-neutral-900 to-neutral-800"
       style={{ backgroundSize: "400% 400%" }}
     >
       <div className="lg:w-1/2 w-4/5 text-neutral-100 m-auto text-center justify-center">
