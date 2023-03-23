@@ -15,7 +15,14 @@ export const PortfolioCard: React.FC<CardProps> = ({
           <div className="border-4 relative bg-neutral-800 border-neutral-800 h-72 lg:w-96 md:justify-around w-full rounded-md">
             <a href={url}>
               {title === "Retinello" ? (
-                <div className="bg-white h-full items-center justify-center flex">
+                <div className="bg-white h-full items-center justify-center flex rounded-sm">
+                  <img
+                    src={image}
+                    alt="portfolio image"
+                    className="rounded-md"
+                    style={{ height: "200px", width: "200px" }}
+                  />
+                  {/*
                   <Image
                     src={image}
                     alt="portfolio image"
@@ -25,6 +32,7 @@ export const PortfolioCard: React.FC<CardProps> = ({
                     objectPosition="top"
                     className="rounded-md"
                   />
+              */}
                 </div>
               ) : (
                 <Image

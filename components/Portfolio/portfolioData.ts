@@ -28,8 +28,7 @@ export const portfolioData = [
   {
     title: "Retinello",
     description: "Next generation learning platform, coming soon!",
-    image:
-      "https://raw.githubusercontent.com/kouznetsov1/personal_website/main/public/retinello.png",
+    image: "/retinello.svg",
     tools: ["React", "Next.js", "TypeScript", "Tailwind", "Backend TBA"],
     url: "http://www.retinello.se",
   },
