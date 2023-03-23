@@ -12,7 +12,7 @@ export const Profile = () => {
       <div className="lg:w-1/2 w-4/5 text-neutral-100 m-auto text-center min-h-screen flex flex-col flex-grow justify-center">
         <div className="flex flex-col flex-grow justify-evenly">
           <div className="drop-shadow-lg">
-            <div className="flex m-auto justify-center">
+            <div className="flex m-auto justify-center my-12">
               <div className="-mr-32">
                 <a href="https://www.linkedin.com/in/daniel-kouznetsov-489011127/">
                   <ProfileImage
@@ -56,7 +56,7 @@ export const Profile = () => {
         </div>
         <div className="mt-auto">
           <a href="#portfolio">
-            <div className="animate-bounce">
+            <div className="animate-bounce mt-6">
               <ArrowDownwardIcon fontSize="large" />
             </div>
           </a>
