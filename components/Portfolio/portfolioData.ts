@@ -27,9 +27,17 @@ export const portfolioData = [
   },
   {
     title: "Retinello",
-    description: "Next generation learning platform, coming soon!",
+    description: "Next generation AI learning platform, coming soon!",
     image: "/retinello.svg",
-    tools: ["React", "Next.js", "TypeScript", "Tailwind", "Backend TBA"],
+    tools: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Node.js",
+      "MongoDB",
+      "Express",
+    ],
     url: "http://www.retinello.se",
   },
 ];
