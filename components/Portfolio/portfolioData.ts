@@ -28,7 +28,7 @@ export const portfolioData = [
   {
     title: "Retinello",
     description: "Next generation AI learning platform, coming soon!",
-    image: "/retinello.svg",
+    image: "/man_in_chair.svg",
     tools: [
       "React",
       "Next.js",
