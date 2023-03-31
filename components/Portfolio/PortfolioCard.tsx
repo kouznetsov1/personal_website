@@ -12,10 +12,10 @@ export const PortfolioCard: React.FC<CardProps> = ({
     <div className="w-full my-6 rounded-md p-6 lg:p-12 bg-neutral-200 shadow-xl">
       <div className="m-auto flex flex-col lg:flex-row">
         <div className="">
-          <div className="border-4 relative bg-neutral-800 border-neutral-800 h-72 lg:w-96 md:justify-around w-full rounded-md">
+          <div className="border-4 relative bg-neutral-800 border-neutral-800 h-72 lg:w-96 md:justify-around w-full rounded-md bg-yellow500">
             <a href={url}>
               {title === "Retinello" ? (
-                <div className="bg-white h-full items-center justify-center flex rounded-sm">
+                <div className="h-full items-center justify-center flex rounded-sm bg-yellow-400">
                   <img
                     src={image}
                     alt="portfolio image"
