@@ -1,7 +1,11 @@
 import type { NextPage } from "next";
-import { Profile, Portfolio, Footer } from "@components";
 import "@fontsource/roboto";
 import Head from "next/head";
+import { ProfileSection } from "components/Section";
+import { StartupSection } from "components/StartupSection";
+import { StudySection } from "components/StudySection";
+import { WorkSection } from "components/WorkSection";
+import { FadeInSection } from "components/FadeInSection";
 
 const Home: NextPage = () => {
   return (
@@ -13,9 +17,16 @@ const Home: NextPage = () => {
         </Head>
       </div>
       <div>
-        <Profile />
-        <Portfolio />
-        <Footer />
+        <ProfileSection />
+        <FadeInSection>
+          <StartupSection />
+        </FadeInSection>
+        <FadeInSection>
+          <StudySection />
+        </FadeInSection>
+        <FadeInSection>
+          <WorkSection />
+        </FadeInSection>
       </div>
     </div>
   );
