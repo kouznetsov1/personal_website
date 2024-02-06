@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ["raw.githubusercontent.com"],
   },
+  transpilePackages: ["geist"],
 };
 
 module.exports = nextConfig;
