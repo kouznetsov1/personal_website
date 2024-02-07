@@ -52,6 +52,7 @@ const Projects: NextPage = () => {
                 href="https://retinello.com"
                 className="font-medium underline"
                 target="_blank"
+                rel="noreferrer"
               >
                 here
               </a>
@@ -89,6 +90,7 @@ const Projects: NextPage = () => {
                 href="https://mellori.ai"
                 className="font-medium underline"
                 target="_blank"
+                rel="noreferrer"
               >
                 here
               </a>
@@ -119,6 +121,7 @@ const Projects: NextPage = () => {
                 href="https://retinellolabs.com"
                 className="font-medium underline"
                 target="_blank"
+                rel="noreferrer"
               >
                 here
               </a>
