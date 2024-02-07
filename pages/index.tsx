@@ -2,8 +2,7 @@ import type { NextPage } from "next";
 import "@fontsource/roboto";
 import Head from "next/head";
 import Link from "next/link";
-import { Briefcase, Laptop, Newspaper } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "components/ui/Avatar";
+import { skills, courses } from "data/skills";
 
 const Home: NextPage = () => {
   return (
@@ -12,85 +11,79 @@ const Home: NextPage = () => {
         <title>Daniel Kouznetsov</title>
         <link rel="icon" href="static/favicon.ico" />
       </Head>
-      <div className="flex flex-col w-full h-full max-w-2xl gap-2">
-        <p className="flex flex-row items-center gap-4 text-lg text-gray-200">
-          I&apos;m Daniel and I like building stuff.
-          <Avatar>
-            <AvatarImage
-              src="https://media.licdn.com/dms/image/D4D03AQGB3EnIzprO6A/profile-displayphoto-shrink_800_800/0/1684498437871?e=1712793600&v=beta&t=iVRcCPM5HrLWa0wT4pKxX_S6dm_cKiLKKJGzJNcZhLk"
-              alt="Daniel Kouznetsov"
-            />
-            <AvatarFallback>DK</AvatarFallback>
-          </Avatar>
-        </p>
-        <p className="text-xs text-opacity-75 text-gray-50">
-          I&apos;m very curious about how we can build AI agents to automate
-          daily, unneccessary workflows. Currently I am working on building a
-          fleet of multi-purpose AI agents and working on my startup in the
-          AI/EdTech space, you can read more about my startup{" "}
-          <Link href="/projects" className="font-semibold underline">
-            here.
-          </Link>
-        </p>
-        <p className="text-xs text-opacity-75 text-gray-50">
-          I also have a (almost, 99% there with 3 exams left) B.Sc in Computer
-          Science and Engineering as well as a M.Sc in AI & Machine Learning.
-          During the summers I&apos;ve had internships in tech which you can
-          read more about{" "}
-          <Link href="/work" className="font-semibold underline">
-            here.
-          </Link>
-        </p>
-      </div>
-      <div className="flex flex-col gap-4">
-        <Link
-          href="/projects"
-          className="flex flex-row w-full gap-6 p-8 transition-all duration-75 border border-gray-200 border-opacity-25 rounded-lg h-fit hover:bg-gray-800 hover:bg-opacity-25"
-        >
-          <div className="bg-gray-200 rounded-2xl xl:w-1/4 max-w-36 bg-opacity-10 aspect-square">
-            <Laptop className="w-full h-full p-6 opacity-80 text-gray-50" />
-          </div>
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-bold">Projects</p>
-            <p className="max-w-lg text-xs text-opacity-60 text-gray-50">
-              During my studies I had several side projects. Currently I am
-              working on a few things that I am going to showcase here. I am
-              also working on my startup Retinello.
-            </p>
-          </div>
-        </Link>
-        <Link
-          href="/work"
-          className="flex flex-row w-full gap-6 p-8 transition-all duration-75 border border-gray-200 border-opacity-25 rounded-lg h-fit hover:bg-gray-800 hover:bg-opacity-25"
-        >
-          <div className="bg-gray-200 rounded-2xl xl:w-1/4 max-w-36 bg-opacity-10 aspect-square">
-            <Briefcase className="w-full h-full p-6 opacity-80 text-gray-50" />
-          </div>
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-bold">Work</p>
-            <p className="max-w-lg text-xs text-opacity-60 text-gray-50">
-              I studied Computer Science and Engineering and then did a M.Sc in
-              AI & Machine Learning. The last two summers I also had internships
-              in tech at Ericsson and Configura.
-            </p>
-          </div>
-        </Link>
-        <Link
-          href="/writing"
-          className="flex flex-row w-full gap-6 p-8 transition-all duration-75 border border-gray-200 border-opacity-25 rounded-lg h-fit hover:bg-gray-800 hover:bg-opacity-25"
-        >
-          <div className="bg-gray-200 rounded-2xl xl:w-1/4 max-w-36 bg-opacity-10 aspect-square">
-            <Newspaper className="w-full h-full p-6 opacity-80 text-gray-50" />
-          </div>
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-bold">Writing</p>
-            <p className="max-w-lg text-xs text-opacity-60 text-gray-50">
-              I write alot but mostly for myself. Sometimes I learn a thing or
-              two or have something longer to say and I might write it down
+      <div className="flex flex-col w-full h-full max-w-2xl gap-8">
+        <div className="flex flex-col space-y-2">
+          <p className="flex flex-row items-center text-2xl text-gray-200">
+            I like building stuff.
+          </p>
+          <p className="text-xs text-opacity-75 text-gray-50">
+            I&apos;m very curious about how we can build AI agents to automate
+            daily and unneccessary workflows. Currently I am working on building
+            a fleet of multi-purpose AI agents and working on my startup in the
+            AI/EdTech space.
+          </p>
+          <p className="text-xs text-opacity-75 text-gray-50">
+            I also have a (almost, 99% there with 3 exams left) B.Sc in Computer
+            Science and Engineering as well as a M.Sc in AI & Machine Learning.
+            During the summers I&apos;ve had internships in tech which you can
+            read more about{" "}
+            <Link href="/work" className="font-semibold underline">
               here.
-            </p>
+            </Link>
+          </p>
+        </div>
+        <div className="flex flex-col space-y-2">
+          <p className="text-xl text-gray-200">
+            From building I&apos;ve learnt...
+          </p>
+          <p>
+            <span className="text-xs text-opacity-75 text-gray-50">
+              ...that the best way to learn is by doing. I&apos;ve built a lot
+              of projects, some of which you can find{" "}
+              <Link href="/projects" className="font-semibold underline">
+                here.
+              </Link>
+            </span>
+          </p>
+          <p className="text-xs text-opacity-75 text-gray-50">
+            Some but not all of the tech I&apos;ve been using for my own
+            projects can be seen below.
+          </p>
+          <div className="flex flex-row flex-wrap pt-6">
+            {skills.map((skill, index) => (
+              <div className="w-1/2 p-2 lg:w-1/3 2xl:w-1/4">
+                <div className="flex flex-col items-center w-full p-6 space-y-2 transition-all duration-150 border rounded-md border-gray-50 hover:border-opacity-20 group bg-gray-50 bg-opacity-10 border-opacity-5">
+                  <img
+                    src={`images/skills/${skill.iconSrc}icon.svg`}
+                    className="p-5 transition-all duration-150 group-hover:p-4"
+                    alt={skill.name}
+                  />
+                  <p className="text-xs text-center transition-all duration-150 text-opacity-60 group-hover:text-opacity-75 text-gray-50">
+                    {skill.name}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-        </Link>
+        </div>
+        <div className="flex flex-col space-y-2">
+          <p className="text-xl text-gray-200">...but that&apos;s not all!</p>
+          <p className="text-xs text-opacity-75 text-gray-50">
+            I also studied engineering where I&apos;ve learnt a ton of calculus,
+            physics and several other programming languages such as C/C++, R and
+            Java. Here&apos;s some notable courses:
+          </p>
+          <ul>
+            {courses.map((course, index) => (
+              <li key={index} className="text-xs text-opacity-75 text-gray-50">
+                -{" "}
+                <a href={course.link} className="underline">
+                  {course.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

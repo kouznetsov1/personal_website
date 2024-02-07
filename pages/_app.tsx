@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <main
       className={`${GeistSans.className} bg-gray-950 text-gray-50 w-full items-center h-full flex flex-col`}
     >
-      <div className="w-11/12 sm:w-4/6 lg:w-1/2">
+      <div className="w-11/12 bg-opacity-50 sm:w-5/6 lg:w-4/6 xl:w-1/2">
         <Layout>
           <Component {...pageProps} />
         </Layout>
