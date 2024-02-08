@@ -44,6 +44,7 @@ const Projects: NextPage = () => {
                 <li>&#8226; OpenAI</li>
                 <li>&#8226; PineconeDB</li>
                 <li>&#8226; MongoDB</li>
+                <li>&#8226; Stripe</li>
               </ul>
             </div>
             <p>
