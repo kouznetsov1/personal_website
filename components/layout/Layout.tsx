@@ -10,7 +10,7 @@ type LayoutProps = {
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="flex flex-col justify-between w-full h-auto min-h-screen gap-8 py-6 md:flex-row md:py-20">
+    <div className="flex flex-col w-full h-auto min-h-screen gap-8 py-6 md:justify-between md:flex-row md:py-20">
       <div className="flex flex-col space-y-4 md:w-72">
         <div className="flex flex-col space-y-2">
           <Link
