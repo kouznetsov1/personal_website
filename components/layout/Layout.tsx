@@ -10,12 +10,12 @@ type LayoutProps = {
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="flex flex-col w-full h-auto min-h-screen gap-8 py-6 md:justify-between md:flex-row md:py-20">
+    <div className="flex flex-col w-full h-auto min-h-screen gap-8 py-6 md:justify-between md:flex-row md:py-12 2xl:py-16">
       <div className="flex flex-col space-y-4 md:w-72">
         <div className="flex flex-col space-y-2">
           <Link
             href="/"
-            className="inline-flex flex-row items-center justify-between w-full px-4 py-4 font-medium transition-colors border rounded-md animate-shimmer bg-[linear-gradient(110deg,#030712,45%,#1f2937,55%,#030712)] bg-[length:200%_100%] border-opacity-20 hover:border-opacity-35 border-gray-50"
+            className="inline-flex backdrop-blur-[1px] flex-row items-center justify-between w-full px-4 py-4 font-medium transition-colors border rounded-md animate-shimmer bg-[linear-gradient(110deg,#030712,45%,#1f2937,55%,#030712)] bg-[length:200%_100%] border-opacity-20 hover:border-opacity-35 border-gray-50"
           >
             <p>I&apos;m Daniel</p>
             <Avatar>
@@ -28,19 +28,19 @@ export const Layout = ({ children }: LayoutProps) => {
           </Link>
           <Link
             href="/projects"
-            className="z-10 flex items-center w-full h-10 px-4 font-medium transition-colors duration-150 rounded-md bg-gray-50 bg-opacity-10 hover:bg-opacity-15"
+            className="z-10 flex items-center w-full h-10 px-4 font-medium transition-colors duration-150 rounded-md bg-gray-50 bg-opacity-10 hover:bg-opacity-15 backdrop-blur-[2px]"
           >
             Projects
           </Link>
           <Link
             href="/work"
-            className="z-10 flex items-center w-full h-10 px-4 font-medium transition-colors duration-150 rounded-md bg-gray-50 bg-opacity-10 hover:bg-opacity-15"
+            className="z-10 flex items-center w-full h-10 px-4 font-medium backdrop-blur-[2px] transition-colors duration-150 rounded-md bg-gray-50 bg-opacity-10 hover:bg-opacity-15"
           >
             Work
           </Link>
           <Link
             href="/writing"
-            className="z-10 flex items-center w-full h-10 px-4 font-medium transition-colors duration-150 rounded-md bg-gray-50 bg-opacity-10 hover:bg-opacity-15"
+            className="z-10 flex items-center w-full h-10 px-4 font-medium transition-colors backdrop-blur-[2px] duration-150 rounded-md bg-gray-50 bg-opacity-10 hover:bg-opacity-15"
           >
             Writing
           </Link>

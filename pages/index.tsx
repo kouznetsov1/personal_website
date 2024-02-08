@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           <div className="flex flex-row flex-wrap pt-3">
             {skills.map((skill, index) => (
               <div className="w-1/2 p-2 lg:w-1/3 2xl:w-1/4" key={index}>
-                <div className="flex flex-col items-center w-full h-full p-6 space-y-2 transition-all duration-150 border rounded-md border-gray-50 hover:border-opacity-20 group bg-gray-50 bg-opacity-10 border-opacity-5">
+                <div className="flex flex-col items-center w-full h-full p-6 space-y-2 transition-all duration-150 border rounded-md border-gray-50 hover:border-opacity-20 group backdrop-blur-sm bg-gray-50 bg-opacity-10 border-opacity-5">
                   <img
                     src={`images/skills/${skill.iconSrc}icon.svg`}
                     className="p-5 transition-all duration-150 group-hover:p-4"
