@@ -53,6 +53,14 @@ module.exports = {
         },
       },
       keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -86,6 +94,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "up-and-down-30px": "up-and-down-30px 8s ease-in-out infinite",
         "spin-slow": "rotate 15s linear infinite",
+        shimmer: "shimmer 4s linear infinite",
       },
     },
   },
